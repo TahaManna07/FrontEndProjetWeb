@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* styles.css */
+.mat-toolbar.custom-toolbar {
+  background-color: #1976d2; /* Couleur personnalisée pour la barre de navigation */
+  color: white; /* Couleur du texte */
+}
+
+
+
+.mat-button.logout-button:hover {
+  background-color: #ff0808; /* Couleur personnalisée pour le survol du bouton de déconnexion */
+}

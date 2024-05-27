@@ -1,0 +1,40 @@
+<div class="container">
+  <mat-card class="add-reservation-card">
+    <mat-card-header>
+      <mat-card-title>Ajouter une réservation</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <!-- Formulaire d'ajout de réservation -->
+      <form class="reservation-form">
+        <mat-form-field appearance="outline">
+          <mat-label>Nom de l'utilisateur</mat-label>
+          <input matInput placeholder="Nom de l'utilisateur">
+        </mat-form-field>
+
+
+
+        <mat-form-field appearance="outline">
+          <mat-label>Type de réservation</mat-label>
+          <mat-select>
+            <mat-option value="standard">Standard</mat-option>
+            <mat-option value="premium">Premium</mat-option>
+            <mat-option value="vip">VIP</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Nombre de participants</mat-label>
+          <input matInput type="number" placeholder="Nombre de participants">
+        </mat-form-field>
+
+
+
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary">Enregistrer</button>
+      <button mat-raised-button color="warn">Annuler</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

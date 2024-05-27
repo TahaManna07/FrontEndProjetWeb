@@ -1,0 +1,28 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-content span {
+  margin-right: 20px; /* Marge entre le texte et l'icône GitHub */
+}
+
+.footer-content a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: #dddddd; /* Couleur au survol */
+}

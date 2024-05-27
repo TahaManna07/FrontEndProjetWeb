@@ -1,0 +1,22 @@
+<!-- app.component.html -->
+<mat-toolbar class="custom-toolbar">
+  <span>Reservation System</span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/admin/reservations">Reservations</button>
+  <button *ngIf="isAdmin" mat-button  routerLink="/admin/users">Users</button>
+  <button mat-button routerLink="/admin/sessions">Sessions</button>
+  <span >
+
+  </span>
+  <button mat-button *ngIf="authService.isAuthenticated">{{ this.authService.username }}
+    <mat-icon>person</mat-icon>
+  </button>
+
+
+
+  <button mat-button mat-raised-button color="accent" routerLink="/login">Logout</button>
+</mat-toolbar>
+
+
+
+

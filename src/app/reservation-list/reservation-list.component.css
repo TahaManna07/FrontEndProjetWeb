@@ -1,0 +1,22 @@
+.reservation-container {
+  margin: 20px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+}
+
+.search-form-field {
+  width: 300px;
+  margin: auto; /* Pour centrer le formulaire */
+}
+
+.reservation-table {
+  width: 100%;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.paginator {
+  margin-top: 20px;
+}

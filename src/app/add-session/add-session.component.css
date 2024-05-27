@@ -1,0 +1,23 @@
+.add-session-card {
+  max-width: 600px;
+  margin: auto;
+}
+
+.session-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  margin-top: 16px;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}

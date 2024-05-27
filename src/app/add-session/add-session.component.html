@@ -1,0 +1,47 @@
+<div class="container">
+  <mat-card class="add-session-card">
+    <mat-card-header>
+      <mat-card-title>Ajouter une session</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <!-- Formulaire d'ajout de session -->
+      <form [formGroup]="sessionForm" (ngSubmit)="onSubmit()" class="session-form">
+        <mat-form-field appearance="outline">
+          <mat-label>Nom de la session</mat-label>
+          <input matInput formControlName="sessionName" placeholder="Nom de la session">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Description de la session</mat-label>
+          <textarea matInput formControlName="description" placeholder="Description de la session"></textarea>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Durée (en heures)</mat-label>
+          <input matInput type="number" formControlName="duration" placeholder="Durée de la session">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Type de session</mat-label>
+          <mat-select formControlName="sessionType">
+            <mat-option value="standard">Standard</mat-option>
+            <mat-option value="atelier">Atelier</mat-option>
+            <mat-option value="conférence">Conférence</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div class="form-group">
+          <mat-label>Équipements nécessaires</mat-label>
+          <mat-checkbox formControlName="projecteur">Projecteur</mat-checkbox>
+          <mat-checkbox formControlName="tableauBlanc">Tableau blanc</mat-checkbox>
+          <mat-checkbox formControlName="ordinateurs">Ordinateurs</mat-checkbox>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Enregistrer</button>
+      <button mat-raised-button color="warn" type="button" (click)="onCancel()">Annuler</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

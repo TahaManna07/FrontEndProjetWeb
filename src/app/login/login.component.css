@@ -1,0 +1,41 @@
+.login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  width: 400px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.mat-form-field {
+  margin-bottom: 20px;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-input {
+  font-size: 16px;
+}
+
+.login-button {
+  width: 100%;
+  margin-top: 20px;
+}
